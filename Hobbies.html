@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hobbies</title>
+</head>
+<body>
+     <div id="top">
+        <div>
+        <a href="Home.html">
+            <div>
+            </div>
+        </a>
+        </div>
+        <h2 id="pageTitle">HOBBIES</h2>
+        <div>
+        <img id="smile" src="Images/sentiment_satisfied_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png" alt="smile" title="Toggle language / Промени јазик">
+        </div>
+    </div>
+    <div id="middle">
+        <div>
+            <div id="chess">
+            </div>
+            <div>
+                <h2 id="hobby1Title">Chess</h2>
+                <p id="hobby1Desc">One of my favorite hobbies is playing chess on my PC. I have been playing for about three years, and over time I’ve really improved my skills. I enjoy the challenge of thinking ahead and strategizing to outsmart my opponent. Chess helps me develop patience and focus, and it’s always exciting to learn new tactics and openings.</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2 id="hobby2Title">Watching Series and Movies</h2>
+                <p id="hobby2Desc">I also love watching series and movies in my free time. Some of my all-time favorite shows are Breaking Bad, Better Call Saul, and The Walking Dead. I find these series really captivating because of their intense stories and well-developed characters. I’m especially drawn to science fiction, as I enjoy exploring imaginative worlds and futuristic ideas, which sets it apart from other genres I watch.</p>
+            </div><div id="tv">
+            </div>
+        </div>
+        <div>
+            <div id="Batman">
+            </div>
+            <div>
+                <h2 id="hobby3Title">Protecting Skopje</h2>
+                <p id="hobby3Desc"> In the evenings, I patrol the streets of Skopje as Batman, protecting the city from all evil forces. It’s rewarding work keeping the citizens safe, though it can be exhausting balancing my vigilante duties with my other hobbies. This responsibility adds real purpose and excitement to my everyday life.</p>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p id="footerText1">&copy; Content Reserved</p>
+        <p id="footerText2">T.A</p>
+    </div>
+    
+    <script>
+    const smile = document.getElementById('smile');
+    let isMacedonian = false;
+
+    smile.addEventListener('click', () => {
+        if (!isMacedonian) {
+            document.getElementById('pageTitle').textContent = 'ХОБИ';
+
+            document.getElementById('hobby1Title').textContent = 'Шах';
+            document.getElementById('hobby1Desc').textContent = 'Едно од моите омилени хобиjа е играње шах на мојот компјутер. Играм веќе околу три години, и со текот на времето навистина ги подобрив своите вештини. Ми се допаѓа предизвикот да размислувам однапред и да креирам стратегии за да го надмудрам противникот. Шахот ми помага да развијам трпение и концентрација, а секогаш е возбудливо да научам нови тактики и отварања.';
+
+            document.getElementById('hobby2Title').textContent = 'Гледање серии и филмови';
+            document.getElementById('hobby2Desc').textContent = 'Исто така, обожавам да гледам серии и филмови во своето слободно време. Некои од моите омилени серии на сите времиња се Breaking Bad, Better Call Saul и The Walking Dead. Многу ми се привлечни овие серии поради нивните интензивни приказни и добро разработени ликови. Особено сум привлечен кон научна фантастика, бидејќи сакам да истражувам имагинациони светови и идни идеи, што ја издвојува од другите жанрови кои ги гледам.';
+
+            document.getElementById('hobby3Title').textContent = 'Заштита на Скопје';
+            document.getElementById('hobby3Desc').textContent = 'Навечер, шетам по улиците на Скопје како Бетмен, штитејќи го градот од сите опасности. Исполнувачки е да ги штитам граѓаните за да бидат безбедни, иако понекогаш е исцрпувачки да ги балансирам моите должности како чувар со другите хобија. Оваа одговорност му дава вистинска цел и возбуда на мојот секојдневен живот.';
+
+            document.getElementById('footerText1').textContent = '© Сите права се задржани';
+            document.getElementById('footerText2').textContent = 'Т.А';
+            isMacedonian = true;
+            }  
+        else {
+            document.getElementById('pageTitle').textContent = 'HOBBIES';
+
+            document.getElementById('hobby1Title').textContent = 'Chess';
+            document.getElementById('hobby1Desc').textContent = 'One of my favorite hobbies is playing chess on my PC. I have been playing for about three years, and over time I’ve really improved my skills. I enjoy the challenge of thinking ahead and strategizing to outsmart my opponent. Chess helps me develop patience and focus, and it’s always exciting to learn new tactics and openings.';
+
+            document.getElementById('hobby2Title').textContent = 'Watching Series and Movies';
+            document.getElementById('hobby2Desc').textContent = 'I also love watching series and movies in my free time. Some of my all-time favorite shows are Breaking Bad, Better Call Saul, and The Walking Dead. I find these series really captivating because of their intense stories and well-developed characters. I’m especially drawn to science fiction, as I enjoy exploring imaginative worlds and futuristic ideas, which sets it apart from other genres I watch.';
+
+            document.getElementById('hobby3Title').textContent = 'Protecting Skopje';
+            document.getElementById('hobby3Desc').textContent = 'In the evenings, I patrol the streets of Skopje as Batman, protecting the city from all evil forces. It’s rewarding work keeping the citizens safe, though it can be exhausting balancing my vigilante duties with my other hobbies. This responsibility adds real purpose and excitement to my everyday life.';
+
+            document.getElementById('footerText1').textContent = '© Content Reserved';
+            document.getElementById('footerText2').textContent = 'T.A';
+            isMacedonian = false;
+        }
+    });
+</script>
+</body>
+</html>

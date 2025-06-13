@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Skills</title>
+</head>
+<body>
+     <div id="top">
+        <div>
+        <a href="Home.html">
+            <div>
+            </div>
+        </a>
+        </div>
+        <h2 id="pageTitle">SKILLS</h2>
+        <div>
+        <img id="smile" src="Images/sentiment_satisfied_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png" alt="smile" title="Toggle language / Промени јазик">
+        </div>
+    </div>
+
+    <div id="center">
+        <div>
+            <div>
+            </div>
+            <div>
+                <h2 id="progDevTitle">Programming & Development</h2>
+                <div>
+                    <h2 id="progLangTitle">Programming Languages:</h2>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 id="devBoardsTitle">Development Boards:</h2>
+                    <ul>
+                        <li>Arduino</li>
+                        <li>Raspberry Pi</li>
+                    </ul>
+                </div>
+                <h2 id="softDevTitle">Software Development & Problem Solving</h2>
+            </div>
+        </div>
+        <div>
+            <div> 
+            </div>
+            <div>
+                <h2 id="elecTitle">Electronics and Hardware</h2>
+                <ul>
+                    <li id="elec1">Building and repairing electronic circuits</li>
+                    <li id="elec2">Working with sensors, motors, and microcontrollers</li>
+                    <li id="elec3">Wiring, soldering, and hardware testing</li>
+                    <li id="elec4">DIY robotics projects (e.g., small cars)</li>
+                    <li id="elec5">Basic electrical knowledge (schematics, measurements, components)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="bottom">
+        <div></div>
+        <div>
+            <h2 id="itTitle">IT and General Technical Skills</h2>
+                <ul>
+                    <li id="it1">PC building and hardware diagnostics</li>
+                    <li id="it2">Installing and managing operating systems (Windows / Linux)</li>
+                    <li id="it3">Basic networking and tech support</li>
+                    <li id="it4">Proficient in Microsoft Office (Word, Excel, PowerPoint)</li>
+                    <li id="it5">Basic graphic editing (Canva, Photoshop basics)</li>
+                </ul>
+        </div>
+    </div>
+    <div id="footer">
+        <p id="footerText1">&copy; Content Reserved</p>
+        <p id="footerText2">T.A</p>
+    </div>
+
+    <script>
+    const smile = document.getElementById('smile');
+    let isMacedonian = false;
+
+    smile.addEventListener('click', () => {
+        if (!isMacedonian) {
+            document.getElementById('pageTitle').textContent = 'ВЕШТИНИ';
+            document.getElementById('progDevTitle').textContent = 'Програмирање и развој';
+            document.getElementById('progLangTitle').textContent = 'Програмски јазици:';
+            document.getElementById('devBoardsTitle').textContent = 'Развојни плочи:';
+            document.getElementById('softDevTitle').textContent = 'Развој на софтвер и решавање проблеми';
+            document.getElementById('elecTitle').textContent = 'Електроника и хардвер';
+            document.getElementById('elec1').textContent = 'Изградба и поправка на електронски кола';
+            document.getElementById('elec2').textContent = 'Работа со сензори, мотори и микроконтролери';
+            document.getElementById('elec3').textContent = 'Жици, лемење и тестирање на хардвер';
+            document.getElementById('elec4').textContent = 'DIY роботски проекти (на пр., мали автомобили)';
+            document.getElementById('elec5').textContent = 'Основно електрично знаење (шеми, мерења, компоненти)';
+            document.getElementById('itTitle').textContent = 'ИТ и општи технички вештини';
+            document.getElementById('it1').textContent = 'Собирање компјутер и дијагностика на хардвер';
+            document.getElementById('it2').textContent = 'Инсталирање и управување со оперативни системи (Windows / Linux)';
+            document.getElementById('it3').textContent = 'Основни мрежи и техничка поддршка';
+            document.getElementById('it4').textContent = 'Искуство со Microsoft Office (Word, Excel, PowerPoint)';
+            document.getElementById('it5').textContent = 'Основна обработка на графика (Canva, основи на Photoshop)';
+            document.getElementById('footerText1').textContent = '© Сите права се задржани';
+            document.getElementById('footerText2').textContent = 'Т.А';
+            isMacedonian = true;
+        } 
+        else {
+            document.getElementById('pageTitle').textContent = 'SKILLS';
+            document.getElementById('progDevTitle').textContent = 'Programming & Development';
+            document.getElementById('progLangTitle').textContent = 'Programming Languages:';
+            document.getElementById('devBoardsTitle').textContent = 'Development Boards:';
+            document.getElementById('softDevTitle').textContent = 'Software Development & Problem Solving';
+            document.getElementById('elecTitle').textContent = 'Electronics and Hardware';
+            document.getElementById('elec1').textContent = 'Building and repairing electronic circuits';
+            document.getElementById('elec2').textContent = 'Working with sensors, motors, and microcontrollers';
+            document.getElementById('elec3').textContent = 'Wiring, soldering, and hardware testing';
+            document.getElementById('elec4').textContent = 'DIY robotics projects (e.g., small cars)';
+            document.getElementById('elec5').textContent = 'Basic electrical knowledge (schematics, measurements, components)';
+            document.getElementById('itTitle').textContent = 'IT and General Technical Skills';
+            document.getElementById('it1').textContent = 'PC building and hardware diagnostics';
+            document.getElementById('it2').textContent = 'Installing and managing operating systems (Windows / Linux)';
+            document.getElementById('it3').textContent = 'Basic networking and tech support';
+            document.getElementById('it4').textContent = 'Proficient in Microsoft Office (Word, Excel, PowerPoint)';
+            document.getElementById('it5').textContent = 'Basic graphic editing (Canva, Photoshop basics)';
+            document.getElementById('footerText1').textContent = '© Content Reserved';
+            document.getElementById('footerText2').textContent = 'T.A';
+            isMacedonian = false;
+        }
+    });
+    </script>
+</body>
+</html>

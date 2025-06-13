@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CV</title>
+</head>
+<body>
+    <div id="top">
+        <p id="name">Teo Antovski</p>
+        <h2 id="home">HOME</h2>
+        <div>
+        <img id="smile" src="Images/sentiment_satisfied_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png" alt="smile" title="Toggle language / Промени јазик">
+        </div>
+    </div>
+    <div id="sections">
+        <a id="Hobbies" href="Hobbies.html">
+        <div>
+            <h2 id="hobbies">HOBBIES</h2>
+        </div>
+        </a>
+        <a id="Skills" href="Skills.html">
+        <div>
+            <h2 id="skills">SKILLS</h2>
+        </div>
+        </a>
+        <a id="AboutMe" href="AboutMe.html">
+        <div>
+            <h2 id="aboutme">ABOUT ME</h2>
+        </div>
+        </a>
+    </div>
+    <div id="footer">
+        <p id="footerText1">&copy; Content Reserved</p>
+        <p id="footerText2">T.A</p>
+    </div>
+    <script>
+    const smile = document.getElementById('smile');
+    let isMacedonian = false;
+
+    smile.addEventListener('click', () => {
+        if (!isMacedonian) {
+            document.getElementById('name').textContent = 'Тео Антовски';
+            document.getElementById('home').textContent = 'Почетна';
+            document.getElementById('hobbies').textContent = 'Хоби';
+            document.getElementById('skills').textContent = 'Вештини';
+            document.getElementById('aboutme').textContent = 'За мене';
+            document.getElementById('footerText1').textContent = '© Сите права се задржани';
+            document.getElementById('footerText2').textContent = 'Т.А';
+            isMacedonian = true;
+        } 
+        else {
+            document.getElementById('name').textContent = 'Teo Antovski';
+            document.getElementById('home').textContent = 'HOME';
+            document.getElementById('hobbies').textContent = 'HOBBIES';
+            document.getElementById('skills').textContent = 'SKILLS';
+            document.getElementById('aboutme').textContent = 'ABOUT ME';
+            document.getElementById('footerText1').textContent = '© Content Reserved';
+            document.getElementById('footerText2').textContent = 'T.A';
+            isMacedonian = false;
+        } 
+    });
+  </script>
+</body>
+</html>

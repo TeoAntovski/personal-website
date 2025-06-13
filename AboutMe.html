@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>About Me</title>
+</head>
+<body>
+     <div id="top">
+        <div>
+        <a href="Home.html">
+            <div>
+            </div>
+        </a>
+        </div>
+        <h2 id="pageTitle">ABOUT ME</h2>
+        <div>
+        <img id="smile" src="Images/sentiment_satisfied_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png" alt="smile" title="Toggle language / Промени јазик">
+        </div>
+    </div>
+    <div id="ME">
+        <div>
+            <div>
+                <h2 id="whoTitle">Who I Am</h2>
+                <p id="whoText">Hello! I’m <strong>Teo Antovski</strong>, a passionate and motivated student from <strong>Skopje, Macedonia</strong>, currently pursuing a degree in <strong>Cyber Security</strong> at <strong>FINKI</strong>. I’ve always been fascinated by technology how it works, how it breaks, and how to protect it. My early interests in electronics and communication led me to graduate with excellence from <strong>SUGS Vlado Tasevski</strong>, where I specialized as a technician in electronics and telecommunications. That solid technical background laid the groundwork for my deeper dive into the digital world, where my focus has now shifted toward defending systems and information in an increasingly connected world.</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2 id="doTitle">What I Do</h2>
+                <p id="doText">My journey has been hands-on and driven by real experience. I’ve completed internships at <strong>Setec</strong> in their Service Department, where I worked on diagnosing hardware failures, repairing electronic devices, and understanding the intricate relationship between software and hardware. At <strong>Baumer</strong>, I had the opportunity not just to learn, but to teach, helping others understand electrical circuits and get hands-on with CNC machinery. These experiences taught me how to troubleshoot, how to explain complex systems clearly, and how to stay calm under pressure, all skills that are deeply valuable in cyber security. Whether it’s analyzing vulnerabilities in code, securing a network, or just solving a tough problem, I bring persistence, curiosity, and a love for tech to everything I do.</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2 id="loveTitle">What I Love</h2>
+                <p id="loveText">Outside the world of tech, I’m a person who thrives on creativity, movement, and challenge. I love to work out regularly, push my limits on hikes, get lost in great movies, and build things with my own two hands. One of my favorite personal projects was designing and constructing an entire <strong>summerhouse</strong> from scratch. I planned, budgeted, bought materials like wood and cement, and over the course of three months, brought it to life with my own tools and effort. It taught me patience, planning, and how good it feels to finish something big. I also love coffee especially <strong>Americanos</strong>. One cup in the morning and I'm fully locked in. It's more than a routine; it’s a ritual that fuels my focus, especially when coding or tackling a new project.</p> 
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p id="footerText1">&copy; Content Reserved</p>
+        <p id="footerText2">T.A</p>
+    </div>
+    
+    <script>
+    let isMacedonian = false;
+        document.getElementById("smile").addEventListener("click", function () {
+            if (!isMacedonian) {
+                document.getElementById("pageTitle").textContent = "ЗА МЕНЕ";
+                document.getElementById("whoTitle").textContent = "Кој сум јас";
+                document.getElementById("whoText").textContent = "Здраво! Јас сум Тео Антовски, страстен и мотивиран студент од Скопје, Македонија, кој моментално студира Сајбер безбедност на ФИНКИ. Отсекогаш сум бил фасциниран од технологијата, како функционира, како се расипува и како може да се заштити. Моите рани интереси за електроника и комуникации ме доведоа до тоа да завршам со одличен успех во СУГС „Владо Тасевски“, каде што се специјализирав како техничар за електроника и телекомуникации. Тоа цврсто техничко знаење ми овозможи подлабоко да навлезам во дигиталниот свет, каде што мојот фокус сега е насочен кон заштита на системи и информации во сè позповрзаното општество.";
+                document.getElementById("doTitle").textContent = "Што правам";
+                document.getElementById("doText").textContent = "Мојот пат е практичен и воден од вистинско искуство. Имам завршено пракси во Сетек во нивниот Сервисен оддел, каде што работев на дијагностицирање хардверски дефекти, поправка на електронски уреди и разбирање на односот помеѓу хардвер и софтвер. Во Баумер, имав можност не само да учам, туку и да пренесувам знаење, помагајќи им на другите да разберат електрични кола и да работат со CNC машини. Овие искуства ме научија да решавам проблеми, јасно да објаснувам сложени системи и да останам смирен под притисок, сите овие се корисни вештини за сајбер безбедност. Без разлика дали се работи за анализа на ранливости, заштита на мрежа или решавање на тежок проблем, секогаш влегувам со љубопитност, упорност и љубов кон технологијата.";
+                document.getElementById("loveTitle").textContent = "Што сакам";
+                document.getElementById("loveText").textContent = "Надвор од светот на технологијата, сум личност која се храни од креативност, движење и предизвик. Сакам редовно да вежбам, да се искачувам по планини, да се изгубам во добри филмови и да градам нешта со сопствени раце. Еден од моите омилени проекти беше дизајнирање и изработка на цел летниковец од нула. Планирав, буџетирав, купував материјали како дрво и цименто, и за три месеци го изградив со сопствени алати и труд. Овој проект ме научи трпение, организација и колку е добро чувството кога ќе завршиш нешто големо. Исто така обожавам кафе, особено Американо. Една шолја наутро и сум фокусиран. Тоа не е само навика, туку ритуал што ме полни со енергија кога програмирам или решавам нов предизвик.";
+                document.getElementById("footerText1").textContent = "© Сите права се задржани";
+                document.getElementById("footerText2").textContent = "Т.А";
+                isMacedonian = true;
+            } 
+            else {
+                document.getElementById("pageTitle").textContent = "ABOUT ME";
+                document.getElementById("whoTitle").textContent = "Who I Am";
+                document.getElementById("whoText").textContent = "Hello! I’m Teo Antovski, a passionate and motivated student from Skopje, Macedonia, currently pursuing a degree in Cyber Security at FINKI. I’ve always been fascinated by technology how it works, how it breaks, and how to protect it. My early interests in electronics and communication led me to graduate with excellence from SUGS Vlado Tasevski, where I specialized as a technician in electronics and telecommunications. That solid technical background laid the groundwork for my deeper dive into the digital world, where my focus has now shifted toward defending systems and information in an increasingly connected world.";
+                document.getElementById("doTitle").textContent = "What I Do";
+                document.getElementById("doText").textContent = "My journey has been hands-on and driven by real experience. I’ve completed internships at Setec in their Service Department, where I worked on diagnosing hardware failures, repairing electronic devices, and understanding the intricate relationship between software and hardware. At Baumer, I had the opportunity not just to learn, but to teach, helping others understand electrical circuits and get hands-on with CNC machinery. These experiences taught me how to troubleshoot, how to explain complex systems clearly, and how to stay calm under pressure, all skills that are deeply valuable in cyber security. Whether it’s analyzing vulnerabilities in code, securing a network, or just solving a tough problem, I bring persistence, curiosity, and a love for tech to everything I do.";
+                document.getElementById("loveTitle").textContent = "What I Love";
+                document.getElementById("loveText").textContent = "Outside the world of tech, I’m a person who thrives on creativity, movement, and challenge. I love to work out regularly, push my limits on hikes, get lost in great movies, and build things with my own two hands. One of my favorite personal projects was designing and constructing an entire summerhouse from scratch. I planned, budgeted, bought materials like wood and cement, and over the course of three months, brought it to life with my own tools and effort. It taught me patience, planning, and how good it feels to finish something big. I also love coffee especially Americanos. One cup in the morning and I'm fully locked in. It's more than a routine; it’s a ritual that fuels my focus, especially when coding or tackling a new project.";
+                document.getElementById("footerText1").textContent = "© Content Reserved";
+                document.getElementById("footerText2").textContent = "T.A";
+                isMacedonian = false;
+            }
+        });
+    </script>
+</body>
+</html>
