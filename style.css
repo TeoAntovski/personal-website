@@ -73,13 +73,13 @@ flex: 1;
     font-size: 50px;
 }
 #Hobbies{
-    background-image: url("Images/depositphotos_154211708-stock-illustration-seamless-pattern-on-the-theme.jpg");
+    background-image: url("images/depositphotos_154211708-stock-illustration-seamless-pattern-on-the-theme.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #Skills{
-    background-image: url("Images/depositphotos_86932428-stock-photo-business-idea-concept-on-wall.jpg");
+    background-image: url("images/depositphotos_86932428-stock-photo-business-idea-concept-on-wall.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -122,7 +122,7 @@ flex: 1;
     margin-left:10px;
     height: 50px;
     width: 50px;
-    background-image:url("Images/arrow_back_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png");
+    background-image:url("images/arrow_back_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png");
 }
 #top>div>a>div:hover{
     background-color: white;
@@ -434,19 +434,19 @@ flex: 1;
     font-size: 17px;
 }
 #ME>div:nth-of-type(3){
-    background-image: url("Images/7b706525530b419ab29dd24b887fe448.jpg");
+    background-image: url("images/7b706525530b419ab29dd24b887fe448.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 #ME>div:nth-of-type(2){
-    background-image: url("Images/cb45c0694f30458f48bce11de9804762_t.jpeg");
+    background-image: url("images/cb45c0694f30458f48bce11de9804762_t.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 #ME>div:nth-of-type(1){
-    background-image: url("Images/portfolio-bg.jpg");
+    background-image: url("images/portfolio-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
